@@ -32,6 +32,35 @@ class RayCasting:
 
             self.objects_to_render.append((depth, wall_column, wall_pos))
 
+    # hemos agregado la verificación if texture in self.textures para asegurarnos de que texture sea un índice válido en self.textures.
+    # si no es válido, simplemente se omitirá el procesamiento de ese objeto y no se agregará a self.objects_to_render.
+    def get_objects_to_render(self):
+        self.objects_to_render = []
+        for ray, values in enumerate(self.ray_casting_result):
+            depth, proj_height, texture, offset = values
+        
+            # Comprobar si texture es un índice válido
+            if texture in self.textures:
+                # Obtener la textura del diccionario self.textures
+                texture_surface = self.textures.get(texture)
+            
+                if proj_height < HEIGHT:
+                    wall_column = texture_surface.subsurface(
+                        offset * (TEXTURE_SIZE - SCALE), 0, SCALE, TEXTURE_SIZE
+                    )
+                    wall_column = pg.transform.scale(wall_column, (SCALE, proj_height))
+                    wall_pos = (ray * SCALE, HALF_HEIGHT - proj_height // 2)
+                else:
+                    texture_height = TEXTURE_SIZE * HEIGHT / proj_height
+                    wall_column = texture_surface.subsurface(
+                        offset * (TEXTURE_SIZE - SCALE), HALF_TEXTURE_SIZE - texture_height // 2,
+                        SCALE, texture_height
+                    )
+                    wall_column = pg.transform.scale(wall_column, (SCALE, HEIGHT))
+                    wall_pos = (ray * SCALE, 0)
+
+                self.objects_to_render.append((depth, wall_column, wall_pos))
+
     def ray_cast(self):
         self.ray_casting_result = []
         texture_vert, texture_hor = 1, 1
@@ -100,6 +129,8 @@ class RayCasting:
 
             ray_angle += DELTA_ANGLE
 
+
+    
     def update(self):
         self.ray_cast()
         self.get_objects_to_render()

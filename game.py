@@ -12,7 +12,6 @@ from pathfinding import *
 
 from maps import *
 
-
 class Game:
         
     def __init__(self):
