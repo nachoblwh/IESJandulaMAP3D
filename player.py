@@ -81,11 +81,11 @@ class Player:
         if (wall_type_x == 9) or (wall_type_y == 9):
             
             self.game.change_map(BIBLIOTECA)
-            self.x, self.y = 11, 1
+            self.x, self.y = 2, 8
         if (wall_type_x == 26) or (wall_type_y == 26):
             
             self.game.change_map(BIBLIOTECA)
-            self.x, self.y = 11, 9
+            self.x, self.y = 11, 8
         if (wall_type_x == 10) or (wall_type_y == 10):
             
             self.game.change_map(COCINA)
@@ -104,6 +104,7 @@ class Player:
             self.game.change_map(JEFATURA)
         if (wall_type_x == 15) or (wall_type_y == 15):
             
+            self.x, self.y = 4, 9
             self.game.change_map(LINCE)   
         if (wall_type_x == 16) or (wall_type_y == 16):
             
@@ -140,6 +141,7 @@ class Player:
             self.angle = 4.7     
         if (wall_type_x == 21) or (wall_type_y == 21):
             
+            self.x, self.y = 2 , 9.5
             self.game.change_map(ALMACEN)
             self.angle = 4.7 
         #SALIDAS
@@ -165,34 +167,34 @@ class Player:
             self.angle = 8.9
         if (wall_type_x == 32) or (wall_type_y == 32):
             
-            self.x, self.y = 20.5, 25
+            self.x, self.y = 20.5, 25.5
             self.game.change_map(floor_zero)
-            self.angle = 3.5
+            self.angle = 9.2
         if (wall_type_x == 33) or (wall_type_y == 33):
             
-            self.x, self.y = 11.5, 11.0
+            self.x, self.y = 11.5, 13.0
             self.game.change_map(floor_zero)
-            self.angle = 8.9
+            self.angle = 9.2
         if (wall_type_x == 34) or (wall_type_y == 34):
             
             self.x, self.y = 11.5, 12.0
             self.game.change_map(floor_zero)
-            self.angle = 4.6 
+            self.angle = 8 
         if (wall_type_x == 35) or (wall_type_y == 35):
             
-            self.x, self.y = 20.6, 31.5
+            self.x, self.y = 20.6, 31
             self.game.change_map(floor_zero)
             self.angle = 4.6 
         if (wall_type_x == 36) or (wall_type_y == 36):
             
-            self.x, self.y = 20.6, 26.5
+            self.x, self.y = 20.6, 26
             self.game.change_map(floor_zero)
             self.angle = 4.6 
         if (wall_type_x == 37) or (wall_type_y == 37):
             
-            self.x, self.y = 11.5, 11.0
+            self.x, self.y = 11.5, 11
             self.game.change_map(floor_zero)
-            self.angle = 4.6 
+            self.angle = 8.9 
         if (wall_type_x == 38) or (wall_type_y == 38):
             
             self.x, self.y = 11.5, 9.0
@@ -200,27 +202,27 @@ class Player:
             self.angle = 4.6 
         if (wall_type_x == 39) or (wall_type_y == 39):
             
-            self.x, self.y = 8.5, 5.0
+            self.x, self.y = 8.5, 5
             self.game.change_map(floor_zero)
             self.angle = 4.6
         if (wall_type_x == 40) or (wall_type_y == 40):
             
-            self.x, self.y = 11.5, 8.0
+            self.x, self.y = 11.5, 8
             self.game.change_map(floor_zero)
-            self.angle = 4.6  
+            self.angle = 8.9  
         if (wall_type_x == 41) or (wall_type_y == 41):
             
-            self.x, self.y = 11.5, 9.0
+            self.x, self.y = 11.5, 9
             self.game.change_map(floor_zero)
-            self.angle = 4.6  
+            self.angle = 8.9 
         if (wall_type_x == 42) or (wall_type_y == 42):
             
-            self.x, self.y = 14.6, 23.5
+            self.x, self.y = 14.6, 23
             self.game.change_map(floor_zero)
             self.angle = 4.6  
         if (wall_type_x == 43) or (wall_type_y == 43):
             
-            self.x, self.y = 20.6, 9.5
+            self.x, self.y = 20.6, 9
             self.game.change_map(floor_zero)
             self.angle = 4.6
         if (wall_type_x == 44) or (wall_type_y == 44):
@@ -232,7 +234,7 @@ class Player:
             
             self.x, self.y = 11.5, 15.0
             self.game.change_map(floor_zero)
-            self.angle = 4.6  
+            self.angle = 8.9 
         if (wall_type_x == 46) or (wall_type_y == 46):
             
             self.x, self.y = 11.5, 13.0
@@ -242,7 +244,12 @@ class Player:
             
             self.x, self.y = 20.6, 33.0
             self.game.change_map(floor_zero)
-            self.angle = 4.6            
+            self.angle = 4.6
+        if (wall_type_x == 53) or (wall_type_y == 53):
+            
+            self.x, self.y = 11.5, 7
+            self.game.change_map(floor_zero)
+            self.angle = 6.2          
 
         self.angle %= math.tau
 

@@ -80,5 +80,13 @@ class ObjectRenderer:
             44: self.get_texture('resources/textures/PUERTACONPARED.png'),
             45: self.get_texture('resources/textures/PUERTACONPARED.png'),
             46: self.get_texture('resources/textures/PUERTACONPARED.png'),
-            47: self.get_texture('resources/textures/PUERTACONPARED.png')
+            #DECORACIONES
+            47: self.get_texture('resources/textures/PUERTACONPARED.png'),
+            48: self.get_texture('resources/textures/PAREDDECORADA.png'),
+            49: self.get_texture('resources/textures/PAREDESPEJO.png'),
+            50: self.get_texture('resources/textures/PAREDCUADRO.png'),
+            51: self.get_texture('resources/textures/ventana.png'),
+            52: self.get_texture('resources/textures/PUERTAEXIT.png'),
+            53: self.get_texture('resources/textures/PUERTACONPARED.png')
+
         }
