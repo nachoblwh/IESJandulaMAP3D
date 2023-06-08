@@ -276,8 +276,22 @@ class Player:
             self.x, self.y = 8.5, 7
             self.game.change_map(COCINA)
             self.angle = 4.7
+        # SEGUNDA PLANTA
+        if (wall_type_x == 90) or (wall_type_y == 90):
             
-                  
+            self.game.change_map(floor_one)
+            self.x, self.y = 26, 37
+            self.angle = 4.7
+        if (wall_type_x == 91) or (wall_type_y == 91):
+            
+            self.game.change_map(floor_one)
+            self.x, self.y = 26, 18
+            self.angle = 4.7    
+        if (wall_type_x == 92) or (wall_type_y == 92):
+            
+            self.game.change_map(floor_one)
+            self.x, self.y = 11, 8
+            self.angle = 4.7          
 
         self.angle %= math.tau
 

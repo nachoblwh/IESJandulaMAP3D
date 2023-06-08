@@ -34,6 +34,7 @@ class ObjectRenderer:
 
     def load_wall_textures(self):
         return {
+            #PLANTA BAJA
             1: self.get_texture('resources/textures/1.png'),
             2: self.get_texture('resources/textures/PUERTACONPARED.png'),
             3: self.get_texture('resources/textures/2FPB.png'),
@@ -61,6 +62,10 @@ class ObjectRenderer:
             23: self.get_texture('resources/textures/UNIDADPUERTACRISTALALREVES.png'),
             24: self.get_texture('resources/textures/SECRETARIACRISTALERA.jpg'),
             25: self.get_texture('resources/textures/mitadpared.png'),
+            #ESCALERAS PASILLO 1
+            90: self.get_texture('resources/textures/PUERTASUBIRESCALERAS.jpg'),
+            91: self.get_texture('resources/textures/PUERTASUBIRESCALERAS.jpg'),
+            92: self.get_texture('resources/textures/PUERTASUBIRESCALERAS.jpg'),
             #salidas de puerta cuando entras a habitacion
             28: self.get_texture('resources/textures/PUERTACONPARED.png'),
             29: self.get_texture('resources/textures/PUERTACONPARED.png'),
@@ -91,6 +96,46 @@ class ObjectRenderer:
             50: self.get_texture('resources/textures/PAREDCUADRO.png'),
             51: self.get_texture('resources/textures/ventana.png'),
             52: self.get_texture('resources/textures/PUERTAEXIT.png'),
-            53: self.get_texture('resources/textures/PUERTACONPARED.png')
-
+            53: self.get_texture('resources/textures/PUERTACONPARED.png'),
+            #SEGUNDA PLANTA
+            #ESCALERAS PASILLO 1
+            93: self.get_texture('resources/textures/PUERTABAJARESCALERAS.jpg'),
+            94: self.get_texture('resources/textures/PUERTASUBIRESCALERAS.jpg'),
+            #PASILLO 1
+            59: self.get_texture('resources/textures/PUERTACONPARED.png'),
+            60: self.get_texture('resources/textures/PUERTACONPARED.png'),
+            61: self.get_texture('resources/textures/PUERTACONPARED.png'),
+            62: self.get_texture('resources/textures/PUERTACONPARED.png'),
+            63: self.get_texture('resources/textures/PUERTACONPARED.png'),
+            64: self.get_texture('resources/textures/PUERTACONPARED.png'),
+            65: self.get_texture('resources/textures/PUERTACONPARED.png'),
+            66: self.get_texture('resources/textures/PUERTABAJARESCALERAS.jpg'),
+            67: self.get_texture('resources/textures/PUERTASUBIRESCALERAS.jpg'),
+            68: self.get_texture('resources/textures/PUERTACONPARED.png'),
+            69: self.get_texture('resources/textures/PUERTACONPARED.png'),
+            70: self.get_texture('resources/textures/PUERTACONPARED.png'),
+            71: self.get_texture('resources/textures/PUERTACONPARED.png'),
+            72: self.get_texture('resources/textures/PUERTACONPARED.png'),
+            73: self.get_texture('resources/textures/PUERTACONPARED.png'),
+            74: self.get_texture('resources/textures/PUERTACONPARED.png'),
+            75: self.get_texture('resources/textures/PUERTACONPARED.png'),
+            #ESCALERAS PASILLO 2
+            95: self.get_texture('resources/textures/PUERTABAJARESCALERAS.jpg'),
+            96: self.get_texture('resources/textures/PUERTASUBIRESCALERAS.jpg'),
+            #PASILLO 2
+            76: self.get_texture('resources/textures/PUERTACONPARED.png'),
+            77: self.get_texture('resources/textures/PUERTACONPARED.png'),
+            78: self.get_texture('resources/textures/PUERTACONPARED.png'),
+            79: self.get_texture('resources/textures/PUERTACONPARED.png'),
+            80: self.get_texture('resources/textures/PUERTACONPARED.png'),
+            81: self.get_texture('resources/textures/PUERTACONPARED.png'),
+            82: self.get_texture('resources/textures/PUERTACONPARED.png'),
+            83: self.get_texture('resources/textures/PUERTACONPARED.png'),
+            84: self.get_texture('resources/textures/PUERTACONPARED.png'),
+            85: self.get_texture('resources/textures/PUERTACONPARED.png'),
+            86: self.get_texture('resources/textures/PUERTACONPARED.png'),
+            87: self.get_texture('resources/textures/PUERTACONPARED.png'),
+            88: self.get_texture('resources/textures/PUERTACONPARED.png'),
+            89: self.get_texture('resources/textures/PUERTACONPARED.png'),
+            
         }
