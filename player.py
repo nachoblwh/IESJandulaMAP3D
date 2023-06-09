@@ -280,8 +280,8 @@ class Player:
         if (wall_type_x == 90) or (wall_type_y == 90):
             
             self.game.change_map(floor_one)
-            self.x, self.y = 26, 37
-            self.angle = 4.7
+            self.x, self.y = 26, 4
+            self.angle = 1.6
         if (wall_type_x == 91) or (wall_type_y == 91):
             
             self.game.change_map(floor_one)
@@ -290,8 +290,24 @@ class Player:
         if (wall_type_x == 92) or (wall_type_y == 92):
             
             self.game.change_map(floor_one)
-            self.x, self.y = 11, 8
-            self.angle = 4.7          
+            self.x, self.y = 3, 15
+            self.angle = 4.7
+        if (wall_type_x == 93) or (wall_type_y == 93):
+            
+            self.game.change_map(floor_zero)
+            self.x, self.y = 11, 20
+            self.angle = 6.2
+        if (wall_type_x == 95) or (wall_type_y == 95):
+            
+            self.game.change_map(floor_zero)
+            self.x, self.y = 20, 22
+            self.angle = 9.2  
+        if (wall_type_x == 66) or (wall_type_y == 66):
+            
+            self.game.change_map(floor_zero)
+            self.x, self.y = 13, 2
+            self.angle = 9.2      
+                
 
         self.angle %= math.tau
 
