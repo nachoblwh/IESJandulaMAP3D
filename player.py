@@ -386,7 +386,7 @@ class Player:
         if (wall_type_x == 106) or (wall_type_y == 106):
             
             self.game.change_map(floor_one)
-            self.x, self.y = 22.5, 17
+            self.x, self.y = 23.5, 17
             self.angle = 4.6 
         if (wall_type_x == 61) or (wall_type_y == 61):
             
@@ -406,7 +406,7 @@ class Player:
         if (wall_type_x == 62) or (wall_type_y == 62):
             
             self.game.change_map(CLASEUNOPASILLO1IZQUIERDA)
-            self.x, self.y = 12, 7
+            self.x, self.y = 12.5, 7
             self.angle = 4.6
         if (wall_type_x == 60) or (wall_type_y == 60):
             
@@ -416,7 +416,7 @@ class Player:
         if (wall_type_x == 63) or (wall_type_y == 63):
             
             self.game.change_map(CLASEDOSPASILLO1IZQUIERDA)
-            self.x, self.y = 12, 7
+            self.x, self.y = 12.5, 7
             self.angle = 4.6
         if (wall_type_x == 109) or (wall_type_y == 109):
             
@@ -436,7 +436,7 @@ class Player:
         if (wall_type_x == 65) or (wall_type_y == 65):
             
             self.game.change_map(CLASETRESPASILLO1IZQUIERDA)
-            self.x, self.y = 12, 7
+            self.x, self.y = 12.5, 7
             self.angle = 4.6
         if (wall_type_x == 111) or (wall_type_y == 111):
             
@@ -453,7 +453,7 @@ class Player:
         if (wall_type_x == 83) or (wall_type_y == 83):
             
             self.game.change_map(BANIOPRIMEROSEGUNDAPLANTA)
-            self.x, self.y = 2, 8
+            self.x, self.y = 2.5, 8
             self.angle = 4.6
         if (wall_type_x == 98) or (wall_type_y == 98):
             
@@ -463,13 +463,127 @@ class Player:
         if (wall_type_x == 84) or (wall_type_y == 84):
             
             self.game.change_map(BANIOSEGUNDOSEGUNDAPLANTA)
-            self.x, self.y = 2, 8
+            self.x, self.y = 2.5, 8
             self.angle = 4.6
         if (wall_type_x == 99) or (wall_type_y == 99):
             
             self.game.change_map(floor_one)
             self.x, self.y = 30, 4
             self.angle = 1.6
+        if (wall_type_x == 85) or (wall_type_y == 85):
+            
+            self.game.change_map(CLASEPRIMERAIZQUIERDA)
+            self.x, self.y = 1.5, 7
+            self.angle = 4.6
+        if (wall_type_x == 86) or (wall_type_y == 86):
+            
+            self.game.change_map(CLASEPRIMERAIZQUIERDA)
+            self.x, self.y = 8.5, 7
+            self.angle = 4.6
+        if (wall_type_x == 115) or (wall_type_y == 115):
+            
+            self.game.change_map(floor_one)
+            self.x, self.y = 32, 5
+            self.angle = 1.6
+        if (wall_type_x == 116) or (wall_type_y == 116):
+            
+            self.game.change_map(floor_one)
+            self.x, self.y = 36, 5
+            self.angle = 1.6
+        if (wall_type_x == 87) or (wall_type_y == 87):
+            
+            self.game.change_map(AULAINFORMATICA)
+            self.x, self.y = 1.5, 9
+            self.angle = 4.6
+        if (wall_type_x == 117) or (wall_type_y == 117):
+            
+            self.game.change_map(floor_one)
+            self.x, self.y = 37, 5
+            self.angle = 1.6
+        if (wall_type_x == 88) or (wall_type_y == 88):
+            
+            self.game.change_map(CLASETERCERAIZAQUIERDA)
+            self.x, self.y = 1.5, 7
+            self.angle = 4.6
+        if (wall_type_x == 117) or (wall_type_y == 117):
+            
+            self.game.change_map(floor_one)
+            self.x, self.y = 39, 5
+            self.angle = 1.6
+        if (wall_type_x == 89) or (wall_type_y == 89):
+            
+            self.game.change_map(CLASETERCERAIZAQUIERDA)
+            self.x, self.y = 10.5, 7
+            self.angle = 4.6
+        if (wall_type_x == 118) or (wall_type_y == 118):
+            
+            self.game.change_map(floor_one)
+            self.x, self.y = 42, 5
+            self.angle = 1.6
+        if (wall_type_x == 76) or (wall_type_y == 76):
+            
+            self.game.change_map(PRIMEROBCHA)
+            self.x, self.y = 12.5, 7
+            self.angle = 4.6
+        if (wall_type_x == 77) or (wall_type_y == 77):
+            
+            self.game.change_map(PRIMEROBCHA)
+            self.x, self.y = 1.5, 7
+            self.angle = 4.6
+        if (wall_type_x == 119) or (wall_type_y == 119):
+            
+            self.game.change_map(floor_one)
+            self.x, self.y = 32.5, 6
+            self.angle = 1.6
+        if (wall_type_x == 120) or (wall_type_y == 120):
+            
+            self.game.change_map(floor_one)
+            self.x, self.y = 28.5, 6
+            self.angle = 4.6
+        if (wall_type_x == 78) or (wall_type_y == 78):
+            
+            self.game.change_map(PRIMEROBCHB)
+            self.x, self.y = 12.5, 7
+            self.angle = 4.6
+        if (wall_type_x == 79) or (wall_type_y == 79):
+            
+            self.game.change_map(PRIMEROBCHB)
+            self.x, self.y = 1.5, 7
+            self.angle = 4.6
+        if (wall_type_x == 121) or (wall_type_y == 121):
+            
+            self.game.change_map(floor_one)
+            self.x, self.y = 37, 6
+            self.angle = 1.6
+        if (wall_type_x == 122) or (wall_type_y == 122):
+            
+            self.game.change_map(floor_one)
+            self.x, self.y = 33, 6
+            self.angle = 4.6
+        if (wall_type_x == 80) or (wall_type_y == 80):
+            
+            self.game.change_map(PRIMEROBCHC)
+            self.x, self.y = 12.5, 7
+            self.angle = 4.6
+        if (wall_type_x == 81) or (wall_type_y == 81):
+            
+            self.game.change_map(PRIMEROBCHC)
+            self.x, self.y = 1.5,7
+            self.angle = 4.6
+        if (wall_type_x == 123) or (wall_type_y == 123):
+            
+            self.game.change_map(floor_one)
+            self.x, self.y = 42, 6
+            self.angle = 1.6
+        if (wall_type_x == 124) or (wall_type_y == 124):
+            
+            self.game.change_map(floor_one)
+            self.x, self.y = 38, 6
+            self.angle = 4.6
+        
+        
+        
+
                 
 
         self.angle %= math.tau
