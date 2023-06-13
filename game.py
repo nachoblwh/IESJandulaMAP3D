@@ -58,6 +58,7 @@ class Game:
             self.update()
             self.draw()
 
+    #Esto nos ayudará a cambiar el mapa cuando choquemos con un id específico.
     def change_map(self, new_map_array):
 
         self.map.change_map(new_map_array)
