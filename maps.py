@@ -1,3 +1,8 @@
+#CLASE MAPS
+#Esta clase se encarga de contener la estructura de todos los niveles del juego.
+#cada numero representa un sprite distinto.
+# "_" Representa por donde el jugador puede caminar.
+
 _ = False
 floor_zero = [
     [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 52, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],

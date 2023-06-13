@@ -1,6 +1,7 @@
 import pygame as pg
 from settings import *
 
+#Esta clase se encargará de renderizar las imágenes del juego.
 
 class ObjectRenderer:
     def __init__(self, game):
@@ -10,11 +11,12 @@ class ObjectRenderer:
         self.sky_image = self.get_texture('resources/textures/blacksky.png', (WIDTH, HALF_HEIGHT))
         self.sky_offset = 0
        
-
+    #esto pintará la imagen cuando pasen a ser renderizadas las imagenes
     def draw(self):
         self.draw_background()
         self.render_game_objects()
 
+    
     def draw_background(self):
         self.sky_offset = (self.sky_offset + 4.5 * self.game.player.rel) % WIDTH
         self.screen.blit(self.sky_image, (-self.sky_offset, 0))
@@ -32,6 +34,7 @@ class ObjectRenderer:
         texture = pg.image.load(path).convert_alpha()
         return pg.transform.scale(texture, res)
 
+    #ID´s para cargar todas las imágenes en el mapa virtual
     def load_wall_textures(self):
         return {
             #PLANTA BAJA
