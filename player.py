@@ -16,7 +16,7 @@ class Player:
         # diagonal movement correction
         self.diag_move_corr = 1 / math.sqrt(2)
 
-
+    #metodo para el movimiento del personaje
     def movement(self):
         sin_a = math.sin(self.angle)
         cos_a = math.cos(self.angle)

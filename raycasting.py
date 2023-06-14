@@ -2,7 +2,8 @@ import pygame as pg
 import math
 from settings import *
 
-
+#Esta clase es la encargada de mostrar correctamente los graficos de nuestro videojuego.
+#La usamos para crear una perspectiva tridimensional en un mapa bidimensional.
 class RayCasting:
     def __init__(self, game):
         self.game = game
@@ -15,7 +16,7 @@ class RayCasting:
         for ray, values in enumerate(self.ray_casting_result):
             depth, proj_height, texture, offset = values
 
-            #Estos condicionales se encargarám de mejorar el rendimiento del programa
+            #Estos condicionales se encargarán de mejorar el rendimiento del programa
             #evitando los cuelgues y los bajones de frames
             if proj_height < HEIGHT:
                 wall_column = self.textures[texture].subsurface(
@@ -74,7 +75,7 @@ class RayCasting:
             sin_a = math.sin(ray_angle)
             cos_a = math.cos(ray_angle)
 
-            # horizontals
+            #horizontal
             y_hor, dy = (y_map + 1, 1) if sin_a > 0 else (y_map - 1e-6, -1)
 
             depth_hor = (y_hor - oy) / sin_a
@@ -92,7 +93,7 @@ class RayCasting:
                 y_hor += dy
                 depth_hor += delta_depth
 
-            # verticals
+            #vertical
             x_vert, dx = (x_map + 1, 1) if cos_a > 0 else (x_map - 1e-6, -1)
 
             depth_vert = (x_vert - ox) / cos_a
@@ -131,8 +132,6 @@ class RayCasting:
 
             ray_angle += DELTA_ANGLE
 
-
-    
     def update(self):
         self.ray_cast()
         self.get_objects_to_render()

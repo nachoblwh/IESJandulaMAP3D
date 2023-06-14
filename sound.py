@@ -1,6 +1,6 @@
 import pygame as pg
 
-#This class will be the sound manager of the game.
+#Esta clase será la encargada del sonido del juego.
 
 class Sound:
     def __init__(self, game):

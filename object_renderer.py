@@ -109,8 +109,7 @@ class ObjectRenderer:
             130: self.get_texture('resources/textures/CUADROFERRARI.png'),
             131: self.get_texture('resources/textures/CUADROFERRARI2.png'),
             132: self.get_texture('resources/textures/CUADRO2.png'),
-            133: self.get_texture('resources/textures/CUADRO3.png'),
-            
+            133: self.get_texture('resources/textures/CUADRO3.png'),          
             #SEGUNDA PLANTA
             #ESCALERAS PASILLO 1
             93: self.get_texture('resources/textures/PUERTABAJARESCALERAS.jpg'),

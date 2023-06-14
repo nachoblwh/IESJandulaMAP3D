@@ -10,6 +10,9 @@ from pathfinding import *
 
 from maps import *
 
+#Esta clase es la principal, encargada de ejecutar el juego
+#aquí se definen los distintos metodos que llaman a las demás clases del juego.
+
 class Game:
         
     def __init__(self):
